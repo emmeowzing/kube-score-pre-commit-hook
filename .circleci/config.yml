@@ -4,13 +4,25 @@ setup: true
 
 orbs:
   dynamic: bjd2385/dynamic-continuation@3.4.0
+  general: bjd2385/general@0.3.4
 
 workflows:
   version: 2
 
-  default:
+  kube-score:
     jobs:
       - dynamic/continue:
           context: orb-publishing
           modules: |
             scripts
+          filters:
+            branches:
+              ignore: master
+
+      - general/github-release:
+          context: github
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v?[0-9]+\.[0-9]+\.[0-9]+$/
