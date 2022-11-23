@@ -6,5 +6,5 @@ repository:
   homepage: https://github.com/bjd2385/kube-score-pre-commit-hook
 
   # A comma-separated list of topics to set on the repository
-  topics: Helm, Kubernetes, pre-commit
+  topics: Helm, Kubernetes, pre-commit, kube-score
   private: false
