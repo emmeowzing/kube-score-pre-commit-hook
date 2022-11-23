@@ -4,7 +4,7 @@ A [pre-commit](https://pre-commit.com/) hook that runs [kube-score](https://gith
 
 ## Usage
 
-```shell
+```yaml
 repos:
 ...
 - repo: https://github.com/bjd2385/kube-score-pre-commit-hook
