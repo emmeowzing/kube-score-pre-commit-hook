@@ -1,0 +1,19 @@
+version: 2.1
+
+
+orbs: {}
+
+
+executors:
+  default:
+    docker:
+      - image: cimg/base:stable
+
+
+commands: {}
+
+
+jobs: {}
+
+
+workflows: {}
