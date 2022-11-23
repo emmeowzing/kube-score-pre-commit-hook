@@ -1,10 +1,10 @@
 _extends: .github
 
 repository:
-  name: base
-  description: Base repository with default settings and configs
-  homepage: github.com
+  name: kube-score-pre-commit-hook
+  description: kube score pre-commit hook
+  homepage: https://github.com/bjd2385/kube-score-pre-commit-hook
 
   # A comma-separated list of topics to set on the repository
-  topics: settings
+  topics: Helm, Kubernetes, pre-commit
   private: false

@@ -9,12 +9,10 @@ executors:
       - image: cimg/base:stable
 
 workflows:
-  version: 2
-
   on-commit:
     jobs:
       - shellcheck/check:
-          dir: ./src/scripts
+          dir: ./scripts
           exclude: SC2148
           filters:
             branches:
