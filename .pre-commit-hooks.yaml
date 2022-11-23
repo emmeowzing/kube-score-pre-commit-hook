@@ -1,0 +1,9 @@
+- id: kube-score
+  name: Validate Helm charts with kube-score.
+  entry: scripts/kube-score.sh
+  language: script
+  verbose: false
+  # Not sure yet how to narrow this down as it could be variable.
+  #files: ^.helm/.*yml$
+  always_run: true
+  args: []
