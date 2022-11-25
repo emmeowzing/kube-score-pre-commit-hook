@@ -10,7 +10,7 @@ if [ $# -lt 1 ]; then
 fi
 
 
-# Check for a bunch of dependencies for this hook.
+# Check for kubectl.
 if ! command -v kubectl >/dev/null; then
     printf "ERROR: Missing kubectl dependency (https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)\\n" >&2
     exit 1
@@ -23,8 +23,9 @@ if ! command -v kubectl-score >/dev/null; then
     exit 1
 fi
 
+# Check for helm.
 if ! command -v helm >/dev/null; then
-    printf "ERROR: Missing Helm dependency (https://helm.sh/docs/intro/install/)." >&2
+    printf "ERROR: Missing Helm dependency (https://helm.sh/docs/intro/install/).\\n" >&2
     exit 1
 fi
 
